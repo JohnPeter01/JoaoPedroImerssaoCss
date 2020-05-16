@@ -36,6 +36,7 @@ header{
 .menu a{
   display: block;
   padding: 10px 20px;
+  color: #836FFF;
 }
 
 .menu ul {
@@ -62,6 +63,19 @@ header{
   display: grid;
   gap: 2em; 
   grid-template-columns: 240px 500px 300px;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+ }
+
+ @media(min-width: 880){
+  .portifolio .grid{
+    display: grid;
+    grid-template-columns: repeat(3,260);
+    justify-content: center;
+    align-content: center;
+    margin-top: 1em;
+  }
  }
 
 .portifolio Figure{
@@ -71,6 +85,14 @@ header{
 .img-portfolio{
   height: 180px;
   width: 240px;
+  object-fit: cover;
+}
+
+@media(min-width: 1200){
+  .img-portfolio{
+    height: auto;
+    width: 100% ;
+  }
 }
 
 .contacts {
@@ -96,16 +118,14 @@ header{
   font-style: italic;
 }
 
-.img-footer{
-  height: 50px;
-  width: 50px;
-}
-
 a {
   text-decoration: none;
-  
 }
 
 a:hover {
-  text-decoration: underline;
+  filter: drop-shadow(0 0 0.2em #836FFF);
+}
+
+a:visited {
+  text-decoration: none;
 }
