@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Imerssão CSS</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&family=Roboto&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-		  <nav class="menu">
-			<ul>
-			  <li><a href="#">Sobre</a></li>
-			  <li><a href="#">Portfólio</a></li>
-			  <li><a href="#">Contato</a></li>
-			</ul>
-		  </nav>
-		  <div>
-		  	<h1 class="site-title">João Pedro</h1>
-		  	<h2 class="site-subtitle">Web Developer</h2>
-		  </div>
-		</header>
-		<section class="about">
-			<h2> Sobre</h2>
-		</section>
-		<section class="portifolio">
-			<h2>Portfólio</h2>
-			<div class="grid">
-				<figure>
-					<img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-					<figcaption>eCommerce</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-					<figcaption>Mobile</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-					<figcaption>Web design</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-					<figcaption>Projetos pessoais</figcaption>
-				</figure>
-			</div>
-		</section>
-		<section class="contacts">
-			<h2>Contatos</h2>
-		</section>
-		<footer>
-			<i class="fab fa-github"></i>
-		</footer>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pedro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1 class="site-title">João Pedro</h1>
+            <h2 class="site-subtitle">Fullstack Developer</h2>
+        </div>
+    </header>
+    <section class="about">
+        <h2>Sobre</h2>
+        <div class=".about-body">
+            <Figure class="portrait">
+                <img src="./img/Maqunia.jpg" alt="portrait">
+            </Figure>
+            <p>
+                Este site foi construindo durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> 😻 com o apoio das professoras <a href="https://twitter.com/aquijuz">Juliana Amoasei</a> e <a href="https://twitter.com/vanessametonini">Vanessa Tonini</a>e
+                do <a href="https://twitter.com/paulo_caelum">Paulo Silveira</a>
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </section>
+    <section class="portifolio">
+        <h2>Portfólio</h2>
+        <div class="grid">
+            <figure>
+                <a href=""><img class="img-portfolio" src="./img/Webdesign.jpg" alt="Web design"></a>
+                <div class="img-portifolio-text">
+                    Web design
+                </div>
+            </figure>
+            <figure>
+                <a href=""><img class="img-portfolio" src="./img/Backend.jpg" alt="Back-End"></a>
+                <div class="img-portifolio-text">
+                    Back-End
+                </div>
+            </figure>
+            <figure>
+                <a href=""><img class="img-portfolio" src="./img/Projetos.jpg" alt="Projetos pessoais"></a>
+                <div class="img-portifolio-text">
+                    Projeto Pessoais
+                </div>
+            </figure>
+        </div>
+    </section>
+    <footer class="contacts">
+        <h2>Contatos</h2>
+        <div class="social">
+            <a href="joao.pedro.fehc@gmail.com"><i class="far fa-envelope"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jpbritos/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/JohnPeter01"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://twitter.com/TyrFehc"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/jpedrobritos/?hl=pt-br"><i
+					class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+
 </html>

@@ -1,131 +1,255 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: rgb(250, 201, 94);
-  background-size: auto 100vh;
-  font-family: Arial;
-  height: 100vh;
-  font-size: 12;
-  font-family: 'Roboto';
-}
-/**/
-@media(min-width: 768px){
-  body{
-    font-size: 18px;
-  }
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-header{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
 
-.menu{
-  background-color: whitesmoke;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  box-shadow: 0px 5px 15px	#363636;
-}
-
-.menu a{
-  display: block;
-  padding: 10px 20px;
-  color: #836FFF;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.about, .portifolio, .contacts {
-  height: 100vh;
-  width: 100vw;
-}
-.about{
-  background-color: #DCDCDC;
-}
-.portifolio{
-  background-color: #40E0D0;
-}
-
-.portifolio .grid{
-  display: grid;
-  gap: 2em; 
-  grid-template-columns: 240px 500px 300px;
-  margin-top: 1em;
-  justify-content: center;
-  align-items: center;
- }
-
- @media(min-width: 880){
-  .portifolio .grid{
-    display: grid;
-    grid-template-columns: repeat(3,260);
-    justify-content: center;
-    align-content: center;
-    margin-top: 1em;
-  }
- }
-
-.portifolio Figure{
-  text-align: center;
-}
-
-.img-portfolio{
-  height: 180px;
-  width: 240px;
-  object-fit: cover;
-}
-
-@media(min-width: 1200){
-  .img-portfolio{
-    height: auto;
-    width: 100% ;
-  }
-}
-
-.contacts {
-  background-color: #836FFF;
-}
-
-.about h2, .portifolio h2, .contacts h2 {
-  background-color: rgb(87, 87, 87);
-  color: whitesmoke;
-  font-family: 'Nova Mono';
-  padding-left: 25px;
-  width: 100vw;
-}
-
-.site-title,
-.site-subtitle{
-  color: blacksmoke;
-  text-align: center;
-  font-family: Lobster;
-}
-
-.site-subtitle {
-  font-style: italic;
-}
+/*-----------LINKS-----------*/
 
 a {
-  text-decoration: none;
-}
-
-a:hover {
-  filter: drop-shadow(0 0 0.2em #836FFF);
+    text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+
+/*-----------BODY-----------*/
+
+body {
+    font-family: Arial;
+    height: auto;
+    font-size: 12;
+    font-family: "Roboto";
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+
+/*-----------HEADER-----------*/
+
+header {
+    background-color: #40e0d0;
+    background-size: 50vw 50vh;
+    display: flex;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1000px) {
+    header {
+        background-image: url("../img/Banner.jpg");
+        background-size: 100vw 100vh;
+        height: 100vh;
+    }
+}
+
+
+/*-----------MENU-----------*/
+
+.menu {
+    background-color: whitesmoke;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-shadow: 0px 5px 15px #363636;
+    z-index: 3;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #836fff;
+    font-family: Lobster;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .menu a {
+        font-size: 24px;
+    }
+}
+
+.menu a:hover {
+    filter: drop-shadow(0 0 0.2em #836fff);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+
+/*----------TITLE------------*/
+
+.site-title,
+.site-subtitle {
+    color: #ffffff;
+    text-align: center;
+    font-family: Lobster;
+    text-shadow: 5px 5px 5px #1d1e1f;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
+
+
+/*-----------CONTENT-----------*/
+
+.about h2,
+.portifolio h2,
+.contacts h2 {
+    background-color: rgb(87, 87, 87);
+    color: whitesmoke;
+    font-family: "Nova Mono";
+    text-align: center;
+}
+
+
+/*-----------ABOUT-----------*/
+
+.about {
+    background-color: gray;
+    padding-bottom: 1em;
+}
+
+.about-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p {
+    font-family: 'Nova Mono';
+    text-align: justify;
+    text-indent: 1.4em;
+    padding-top: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.about a {
+    color: white;
+}
+
+.about a:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.about .portrait {
+    float: left;
+    margin: 1em;
+}
+
+.about .portrait img {
+    border-radius: 50%;
+    height: 50vh;
+    width: 30vw;
+}
+
+
+/*-----------PORTIFOLIO-----------*/
+
+.portifolio {
+    background-color: #40e0d0;
+}
+
+.portifolio .grid {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portifolio Figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    width: 400px;
+    height: 400px;
+    transition: 500ms;
+    margin: 10px;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    box-shadow: 0 0 10px #1d1e1f, 0 0 10px #1d1e1f, 0 0 10px rgb(87, 87, 87);
+}
+
+.img-portifolio-text {
+    color: whitesmoke;
+    font-size: 24px;
+    text-align: center;
+    font-family: Lobster;
+    text-shadow: 5px 5px 5px #1d1e1f;
+}
+
+@media (max-width: 600px) {
+    .img-portfolio {
+        width: 40vh;
+        height: 40vh;
+        padding: 0;
+        margin-block-start: 10px;
+        border: solid 1px #dcdcdc;
+    }
+    .img-portfolio:hover {
+        transform: scale(1.1);
+        z-index: 2;
+        box-shadow: 0 0 10px #dcdcdc, 0 0 10px #dcdcdc, 0 0 10px #dcdcdc;
+    }
+}
+
+
+/*-----------CONTACTS-----------*/
+
+.contacts {
+    background-color: #836fff;
+}
+
+.contacts .social {
+    background-color: #836fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    color: #000000;
+    font-size: 25px;
+    margin: 20px;
+}
+
+@media(min-width:600px) {
+    .social i {
+        color: #000000;
+        font-size: 50px;
+        margin: 40px;
+    }
+}
+
+.social i:hover {
+    filter: drop-shadow(0 0 0.2em #1d1e1f);
 }
